@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FullScreen Backgrounds - fullPage.js</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage full-screen backgrounds." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- This following line is needed in case of using the default easing option or when using another
+     one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+    <script src="vendors/jquery.easings.min.js"></script>
+
+    <!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+    <script type="text/javascript" src="test.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="test.css" />
+
+    <style>
+
+      /* Style for our header texts
+      * --------------------------------------- */
+      h1{
+        font-size: 2em;
+        font-family: arial,helvetica;
+        color: #fff;
+        margin:0;
+        padding:0;
+      }
+
+      /* Centered texts in each section
+      * --------------------------------------- */
+      .section{
+        text-align:center;
+        font-size: 30px;
+      }
+
+
+      /* Backgrounds will cover all the section
+      * --------------------------------------- */
+      #section0,
+      #section1,
+      #section2,
+      #section3{
+        background-size: cover;
+
+      }
+
+      /* Defining each section background and styles
+      * --------------------------------------- */
+      #section0{
+        background-image: url(imgs/1.jpg);
+
+        padding: 6% 0 0 0;
+      }
+      #section0 h1{
+        font-size: 40px;
+        color:black;
+      }
+      #section6{
+        background-image: url(imgs/6.jpg);
+        padding: 6% 0 0 0;
+        background-size: cover;
+      }
+      #section3{
+        background-image: url(imgs/3.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:50% 50%;
+        background-attachment:fixed;
+      }
+      #section3 h1{
+        color: #000;
+        size: 80px;
+      }
+
+      #section5{
+        background-image: url(imgs/5.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:50% 50%;
+        background-attachment:fixed;
+      }
+
+      #section8{
+        background-image:url(imgs/8.jpg);
+      }
+
+      #section9 h1{
+        color: #FF0000;
+      }
+
+
+      /*Adding background for the slides
+      * --------------------------------------- */
+
+
+      /* Bottom menu
+      * --------------------------------------- */
+      #infoMenu li a {
+        color: #fff;
+      }
+
+    /*  img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }*/
+
+      img{
+        vertical-align : middle;
+      }
+
+    </style>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          verticalCentered: false
+          css3: true
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <div id="fullpage">
+      <div class="section" id="section0">
+        <h1>來來來來來 立來！</h1>
+      </div>
+      <div class="section">想要獲得真愛嘛？</div>
+      <div class="section" id="section3"></div>
+      <div class="section">想要搞gay嘛？</div>
+      <div class="section" id="section5"></div>
+      <div class="section" id="section8"><h1>想要擁有精采的大學生活嘛？</h1></div>
+      <div class="section" id="section9">9/18(四) 17:30 白宮B204<br><br>
+        大同大學熱舞迎新<br><br>
+      <h1> 等你來挑戰</h1></div>
+      <div class="section" id="section6"><h1>想要修煉金手指的也可來參加喔</h1>></div>
+    </div>
+  </body>
+
+</html>
